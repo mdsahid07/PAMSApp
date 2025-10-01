@@ -1,0 +1,40 @@
+[ {
+  "patientId" : 5,
+  "firstName" : "Mary",
+  "lastName" : "Washington",
+  "mailingAddress" : "30 W Burlington",
+  "dateOfBirth" : "1932-05-31",
+  "age" : 93
+}, {
+  "patientId" : 2,
+  "firstName" : "Ana",
+  "lastName" : "Smith",
+  "email" : "amsith@te.edu",
+  "dateOfBirth" : "1948-12-05",
+  "age" : 76
+}, {
+  "patientId" : 1,
+  "firstName" : "Daniel",
+  "lastName" : "Agar",
+  "phoneNo" : "(641) 123-0009",
+  "email" : "dagar@m.as",
+  "mailingAddress" : "1 N Street",
+  "dateOfBirth" : "1987-01-19",
+  "age" : 38
+}, {
+  "patientId" : 4,
+  "firstName" : "Jeff",
+  "lastName" : "Goldbloom",
+  "phoneNo" : "(999) 165-1192",
+  "email" : "jgold@es.co.za",
+  "dateOfBirth" : "1995-02-28",
+  "age" : 30
+}, {
+  "patientId" : 3,
+  "firstName" : "Marcus",
+  "lastName" : "Garvey",
+  "phoneNo" : "(123) 292-0018",
+  "mailingAddress" : "4 East Ave",
+  "dateOfBirth" : "2001-09-18",
+  "age" : 24
+} ]
