@@ -14,8 +14,10 @@ jobs:
           distribution: temurin
           java-version: '21'
           cache: maven
-      - run: mvn -B clean verify
+      - name: Build & test
+        run: mvn -B clean verify
       - name: Upload JAR artifact
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: pams-lab2b-jar
