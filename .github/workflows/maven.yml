@@ -7,6 +7,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        # 👇 the folder that actually contains pom.xml
+        working-directory: pams-lab2b
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -14,11 +20,13 @@ jobs:
           distribution: temurin
           java-version: '21'
           cache: maven
+
       - name: Build & test
         run: mvn -B clean verify
+
       - name: Upload JAR artifact
         if: success()
         uses: actions/upload-artifact@v4
         with:
           name: pams-lab2b-jar
-          path: target/*-shaded.jar
+          path: target/*-shaded.jar   # working dir is pams-lab2b/, so this is correct
